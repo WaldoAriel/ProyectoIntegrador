@@ -88,17 +88,15 @@ footer {
     background-color: rgb(25, 100, 100);
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 .cajaISSRC {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    gap: 15px;
 
-}
-.logoISSRC {
-    margin: 10px;
 }
 
 #menuIcon:hover {
