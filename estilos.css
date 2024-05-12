@@ -75,6 +75,7 @@ article:hover {
     background-color: rgb(238, 238, 238);
     border-radius: 80px;
     display: flex;
+    transition: all .25s;
 }
 
 
@@ -103,4 +104,5 @@ footer {
     transform: scale(0.85); 
     transform: rotate(-25deg);
     fill: rgba(28, 94, 94, 0.6);
+    transition: all .4s;
 }
