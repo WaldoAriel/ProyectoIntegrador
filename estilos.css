@@ -37,23 +37,19 @@ nav {
 
 a {
     text-decoration: none;
-    padding: 10px;
-    transition: all .4s;
 }
 .li_link {
     transition: all .4s;
+    width: 100%;
+    padding: 20px;
 }
 .li_link:hover {
-    background-color: rgb(77, 166, 166);
-    width: 100%;
-    padding: 30px;
-    
+    background-color: rgb(77, 166, 166);    
 }
 .item_menu {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
-
 }
 ul {
     list-style: none;
@@ -68,7 +64,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5rem;
+    gap: 4rem;
     height: 0;
     overflow: hidden;
     transition: all .4s;
@@ -98,7 +94,6 @@ ul {
     justify-content: center;
     box-shadow: -1px -1px 10px 3px rgba(28, 94, 94, 0.45);
     margin: auto;
-    background-color: rgb(77, 166, 166);
     border-radius: 40px;
     height: 80px;
     width: 80px;
@@ -165,5 +160,9 @@ footer {
     transform: rotate(-90deg);
     fill: rgba(255, 255, 255, 0.6);   
 }
-
+@media (max-width: 680px) {
+    article {
+        width: 100%; 
+    }
+}
 
