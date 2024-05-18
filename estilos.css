@@ -32,6 +32,42 @@ nav {
     border: 0px solid rgb(170, 170, 170);
     flex-wrap: wrap;
     align-content: flex-end;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+.item_menu {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+
+}
+ul {
+    list-style: none;
+}
+.ul_links {
+    background-color:rgb(25, 100, 100);
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: calc(100vh + 51px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    height: 0;
+    overflow: hidden;
+    transition: all .4s;
+
+}
+.check {
+    display: none;
+}
+.check:checked + .ul_links {
+    height: calc(100vh + 51px);
 }
 .menu {
     display: flex;
