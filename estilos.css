@@ -104,6 +104,8 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    align-content:center;
 
 }
 article {
@@ -111,7 +113,7 @@ article {
     height: 90px;
     color: rgb(114, 114, 114);
     box-shadow: 3px 3px 6px 2px rgba(140, 140, 140, 0.3);
-    margin: -12px;
+    margin: -10px;
     padding: 10px;
     background-color: rgb(255, 255, 255);
     border-radius: 55px;
@@ -175,8 +177,10 @@ footer {
     fill: rgba(255, 255, 255, 0.6);   
 }
 @media (max-width: 680px) {
+    
     article {
         width: 100%; 
     }
 }
+
 
