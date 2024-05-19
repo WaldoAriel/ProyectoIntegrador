@@ -95,7 +95,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
     border-radius: 40px;
     height: 80px;
     width: 80px;
@@ -106,53 +105,60 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-    align-content:center;
-
+    align-content: center;
 }
+
 article {
-    width: 50%;
-    height: 90px;
+    width: 100%;
     color: rgb(114, 114, 114);
     box-shadow: 3px 3px 6px 2px rgba(140, 140, 140, 0.3);
-    margin: -10px;
-    padding: 10px;
+    margin: 20px 0;
+    padding: 20px;
     background-color: rgb(255, 255, 255);
-    border-radius: 55px;
-    display: flex;
+    border-radius: 20px;
     overflow: hidden;   
     text-overflow: ellipsis;
     transition: all .3s;
 }
+
 article:hover {
     color: rgb(114, 114, 114);
     box-shadow: -1px -1px 2px 2px rgba(140, 140, 140, 0.3);
-    margin: 10px;
-    padding: 20px;
     background-color: rgb(238, 238, 238);
-    border-radius: 80px;
+}
+
+#quienes-somos {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-.art1 {
-    z-index: 6;
+
+.equipo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
-.art2 {
-    z-index: 5;
+
+.miembro {
+    flex: 1 1 calc(33% - 40px);
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(140, 140, 140, 0.3);
+    border-radius: 10px;
+    transition: all .3s;
 }
-.art3 {
-    z-index: 4;
-}
-.art4 {
-    z-index: 3;
-}
-.art5 {
-    z-index: 2;
+
+.miembro:hover {
+    box-shadow: 2px 2px 10px rgba(140, 140, 140, 0.5);
+    background-color: rgb(238, 238, 238);
 }
 
 .textoPerfil {
     text-align: center;
     padding: 5px;
-    
 }
+
 footer {
     padding: 15px;
     background-color: rgb(25, 100, 100);
@@ -161,27 +167,26 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
 .cajaISSRC {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 15px;
-
 }
 
 #menuIcon {
     transition: all .4s;
 }
+
 #menuIcon:hover {
     transform: scale(0.85); 
     transform: rotate(-90deg);
     fill: rgba(255, 255, 255, 0.6);   
 }
+
 @media (max-width: 680px) {
-    
-    article {
-        width: 100%; 
+    .miembro {
+        flex: 1 1 100%;
     }
 }
-
-
