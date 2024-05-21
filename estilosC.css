@@ -212,14 +212,16 @@
     border: none;
     border-bottom: 3px solid rgb(255, 255, 255);
     background-color: transparent;
-    color: #fff;
+    color: rgb(25, 100, 100);
+    font-size: medium;
+    font-weight: 700;
   }
   .form__input:focus {
   background: linear-gradient(to bottom, transparent, rgb(77, 166, 166));/*efecto sobre los input tipo pared transparente que se eleva al hacer clic */
   outline: none;
-  border-bottom: 3px solid #ffffff;
-  color:white;
-  
+  border-radius: 5px;
+  border-bottom: 0px  #ffffff;
+
   }
   .form textarea {
   min-height: 140px;
