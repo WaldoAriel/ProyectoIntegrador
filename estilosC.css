@@ -193,8 +193,8 @@
     flex-wrap: wrap;
     justify-content: center;
     background: rgb(222,230,230);
-    margin: 50px 50px;
-    padding: 30px;
+    margin: 30px 30px;
+    padding: 20px;
     border-radius: 15px;
   }
   
@@ -284,8 +284,8 @@
         flex-wrap: wrap;
         justify-content: center;
         background: rgb(222, 230, 230);
-        margin: 50px 50px;
-        padding: 30px;
+        margin: 10px 10px;
+        padding: 5px;
         border-radius: 15px;
     }
   }
