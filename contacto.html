@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" type="" href="./estilosC.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/img/issrc.ico">
 </head>
+
 <body>
     <main>
         <header>
@@ -20,13 +22,23 @@
             <h1>CONTACTO</h1>
             <nav>
                 <label for="menu" class="menu">
-                    <svg fill="#ffffff" viewBox="-6.4 -6.4 44.80 44.80" id="menuIcon" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff" stroke-width="0.00032">
+                    <svg fill="#ffffff" viewBox="-6.4 -6.4 44.80 44.80" id="menuIcon" version="1.1" xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff"
+                        stroke-width="0.00032">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.064"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                            stroke-width="0.064"></g>
                         <g id="SVGRepo_iconCarrier">
-                        <path d="M26,16c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,14,26,14.896,26,16z" id="med"></path>
-                        <path d="M26,8c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,6,26,6.896,26,8z" id="sup"></path>
-                        <path d="M26,24c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,22,26,22.896,26,24z" id="inf"></path>   </g>
+                            <path
+                                d="M26,16c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,14,26,14.896,26,16z"
+                                id="med"></path>
+                            <path
+                                d="M26,8c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,6,26,6.896,26,8z"
+                                id="sup"></path>
+                            <path
+                                d="M26,24c0,1.104-0.896,2-2,2H8c-1.104,0-2-0.896-2-2s0.896-2,2-2h16C25.104,22,26,22.896,26,24z"
+                                id="inf"></path>
+                        </g>
                     </svg>
                 </label>
                 <input class="check" type="checkbox" name="" value="" id="menu">
@@ -46,29 +58,51 @@
                 </ul>
             </nav>
         </header>
-        
+
         <section id="quienes-somos">
             <article class="art1">
-                <h2>CONTACTO</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid earum laudantium quis fuga culpa ipsa facere. Qui eveniet praesentium, necessitatibus ab ex, ipsa dolor, modi magni magnam accusantium nam.</p>
-                <br><br>
-                <h3>aca algo</h3>
-                <br>
+                <div class="flex-container">
+                    <form class="form">
+                        <div class="form__section uno">
+                            <input type="email" class="form__input" placeholder="Email">
+                        </div>
+                        <div class="form__section dos">
+                            <input type="text" class="form__input" placeholder="Asunto">
+                        </div>
+                        <div class="form__section tres">
+                            <textarea class="form__input" placeholder="Escriba su mensaje"></textarea>
+                        </div>
+                        <div class="form__section">
+                            <input type="submit" class="form__input enviar">
+                        </div>
+                    </form>
+                    <div class="form-img">
+                        <div class="img-conteiner">
+                            <div>
+                                <img src="https://cdn-icons-png.flaticon.com/512/95/95645.png">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
-        
+
         <footer>
             <div class="cajaISSRC">
                 <div><img class="logoISSRC" src="./assets/img/issrc.svg" height="60px" alt="logo ISSRC"></div>
-                <div><p>Instituto Superior <br> Santa Rosa de Calamuchita</p></div>
+                <div>
+                    <p>Instituto Superior <br> Santa Rosa de Calamuchita</p>
+                </div>
             </div>
             <div>
                 <p>Profesor: Javier Bozzo</p>
             </div>
         </footer>
-        
+
     </main>
-    
+
     <script src="./script.js"></script>
 </body>
+
 </html>

@@ -100,6 +100,7 @@ ul {
     width: 80px;
 }
 section {
+    padding: 2rem;
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -185,8 +186,100 @@ footer {
     fill: rgba(255, 255, 255, 0.6);   
 }
 
+.flex-container {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(25, 100, 100);
+    margin: 50px 50px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.form {
+    min-width: 200px;
+	flex: 1;
+	text-align: center;
+	padding: 30px;
+	order: 5;
+}
+.form__input {
+    width: 80%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: #fff;
+
+}
+.form__input:focus {
+	background: linear-gradient(to bottom, transparent, rgb(77, 166, 166));/*efecto sobre los input tipo pared transparente que se eleva al hacer clic */
+	outline: none;
+	border-bottom: 3px solid #5ad;
+
+}
+.form textarea {
+	min-height: 140px;
+	resize: none;/*para sacar propiedad de expandirse del text area*/
+}
+.form-img {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 150px;
+    max-width: 200px;
+    order: 2;
+}
+.form-img div {
+	padding: 10px;
+	
+}
+.img-conteiner {
+   margin: auto; 
+}
+.img-conteiner div {
+	background-color: #1B2631;
+	/*border-radius: 50%;*/
+	text-align: center;
+	padding: 20px;
+}
+.form-img img {
+	width: 100%;	
+	margin: auto;
+}
+.enviar {
+	background-color: rgb(77, 166, 166);
+	border-bottom: none;
+	padding: 12px;
+}
+.enviar:hover {
+	background-color: rgb(28, 136, 136);
+	border-bottom: none;
+	padding: 12px;
+}
+.enviar:focus {
+	background-color: rgb(77, 166, 166);
+	
+}
+.enviar:active {
+	background: linear-gradient(to bottom, rgb(77, 166, 166), rgb(25, 100, 100));
+}
+
 @media (max-width: 680px) {
     .integrante {
         flex: 1 1 100%;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: rgb(25, 100, 100);
+        margin: 50px 50px;
+        padding: 30px;
+        border-radius: 15px;
     }
 }

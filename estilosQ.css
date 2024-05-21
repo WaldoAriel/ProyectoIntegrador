@@ -227,4 +227,10 @@ tr:hover{
     .integrante {
         flex: 1 1 100%;
     }
+    .art_tabla {
+        max-width: 680px;
+        overflow: scroll;
+        display: flex;
+        align-items: flex-start;
+    }
 }
