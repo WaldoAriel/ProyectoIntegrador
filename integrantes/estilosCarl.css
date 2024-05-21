@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Reddit Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: rgb(222, 230, 230);
+}   
+main {
+    width: 100%;
+    margin: 0px auto;
+    border: 1px solid rgb(170, 170, 170);
+}
+header {
+    padding-top: 15px;
+    height: 200px;
+    background-color: rgb(77, 166, 166);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 1.7em;
+}
+nav {
+    display: flex;
+    margin-top: 15px;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(222, 230, 230);
+    border: 0px solid rgb(170, 170, 170);
+    flex-wrap: wrap;
+    align-content: flex-end;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+.li_link {
+    transition: all .4s;
+    width: 100%;
+    padding: 20px;
+}
+.li_link:hover {
+    background-color: rgb(77, 166, 166);    
+}
+.item_menu {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+.ul_links {
+    z-index: 7;
+    background-color:rgb(25, 100, 100);
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: calc(100vh + 1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    height: 0;
+    overflow: hidden;
+    transition: all .4s;
+
+}
+.check {
+    display: none;
+}
+.check:checked + .ul_links {
+    height: 42em;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(77, 166, 166);
+    border-radius: 40px;
+    height: 80px;
+    width: 80px;
+    z-index: 8;
+}
+.menu:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 40px;
+    height: 80px;
+    width: 80px;
+}
+section {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content:center;
+
+}
+article {
+    width: 50%;
+    color: rgb(114, 114, 114);
+    box-shadow: 5px 4px 6px 2px rgba(140, 140, 140, 0.7);
+    margin: -16px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) solid 10px;
+    border-radius: 65px;
+    display: flex;
+    overflow: hidden;   
+    text-overflow: ellipsis;
+    transition: all .3s;
+}
+article:hover {
+    color: rgb(114, 114, 114);
+    box-shadow: 1px 1px 2px 2px rgba(140, 140, 140, 0.4);
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 80px;
+    display: flex;
+}
+.art1 {
+    z-index: 6;
+}
+.art2 {
+    z-index: 5;
+}
+.art3 {
+    z-index: 4;
+}
+.art4 {
+    z-index: 3;
+}
+.art5 {
+    z-index: 2;
+}
+img {
+    border-radius: 50px;
+}
+.textoPerfil {
+    text-align: center;
+    padding: 5px;
+    
+}
+footer {
+    margin-top: auto;
+    padding: 15px;
+    background-color: rgb(25, 100, 100);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cajaISSRC {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+
+}
+
+#menuIcon {
+    transition: all .4s;
+}
+#menuIcon:hover {
+    transform: scale(0.85); 
+    transform: rotate(-90deg);
+    fill: rgba(255, 255, 255, 0.6);   
+}
+@media (max-width: 680px) {
+    
+    article {
+        width: 75%; 
+    }
+}
