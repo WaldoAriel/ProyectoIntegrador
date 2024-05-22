@@ -177,12 +177,10 @@ footer {
 }
 
 #menuIcon {
-    transition: all .4s;
+    transition: all .2s;
 }
-
 #menuIcon:hover {
-    transform: scale(0.85); 
-    transform: rotate(-90deg);
+    transform: scale(0.75) rotate(180deg);
     fill: rgba(255, 255, 255, 0.6);   
 }
 /* #conteiner-table{

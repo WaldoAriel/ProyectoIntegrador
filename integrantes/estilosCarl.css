@@ -116,45 +116,22 @@ section {
 
 }
 article {
-    width: 50%;
+    width: 100%;
     color: rgb(114, 114, 114);
-    box-shadow: 5px 4px 6px 2px rgba(140, 140, 140, 0.7);
     margin: -16px;
     padding: 10px;
-    background-color: rgb(255, 255, 255);
-    border: rgb(255, 255, 255) solid 10px;
-    border-radius: 65px;
     display: flex;
-    overflow: hidden;   
-    text-overflow: ellipsis;
+    justify-content: center;
+    overflow: visible;   
     transition: all .3s;
 }
-article:hover {
-    color: rgb(114, 114, 114);
-    box-shadow: 1px 1px 2px 2px rgba(140, 140, 140, 0.4);
-    margin: 10px;
-    padding: 20px;
-    background-color: rgb(238, 238, 238);
-    border-radius: 80px;
-    display: flex;
-}
+
 .art1 {
     z-index: 6;
 }
-.art2 {
-    z-index: 5;
-}
-.art3 {
-    z-index: 4;
-}
-.art4 {
-    z-index: 3;
-}
-.art5 {
-    z-index: 2;
-}
+
 img {
-    border-radius: 50px;
+    border-radius: 0px;
 }
 .textoPerfil {
     text-align: center;
@@ -179,16 +156,15 @@ footer {
 }
 
 #menuIcon {
-    transition: all .4s;
+    transition: all .2s;
 }
 #menuIcon:hover {
-    transform: scale(0.85); 
-    transform: rotate(-90deg);
+    transform: scale(0.75) rotate(180deg);
     fill: rgba(255, 255, 255, 0.6);   
 }
 @media (max-width: 680px) {
     
     article {
-        width: 75%; 
+        overflow: scroll;
     }
 }

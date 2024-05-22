@@ -116,20 +116,21 @@ section {
 
 }
 article {
+  
     width: 50%;
     height: 90px;
     color: rgb(114, 114, 114);
     box-shadow: 5px 4px 6px 2px rgba(140, 140, 140, 0.7);
-    margin: -16px;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
-    border: rgb(255, 255, 255) solid 10px;
+    margin: -10px auto;
+    padding: 10px auto;
+    background-color: rgb(238, 238, 238);
+    border: rgb(238, 238, 238) solid 10px;
     border-radius: 65px;
     display: flex;
     overflow: hidden;   
     text-overflow: ellipsis;
     transition: all .3s;
-}
+  }
 article:hover {
     color: rgb(114, 114, 114);
     box-shadow: 1px 1px 2px 2px rgba(140, 140, 140, 0.4);
@@ -155,6 +156,22 @@ article:hover {
     z-index: 2;
 }
 
+.art1:hover {
+    z-index: 6;
+}
+.art2:hover {
+    z-index: 6;
+}
+.art3:hover {
+    z-index: 6;
+}
+.art4:hover {
+    z-index: 6;
+}
+.art5:hover {
+    z-index: 6;
+}
+
 .textoPerfil {
     text-align: center;
     padding: 5px;
@@ -178,14 +195,13 @@ footer {
 }
 
 #menuIcon {
-    transition: all .4s;
+    transition: all .2s;
 }
 #menuIcon:hover {
-    transform: scale(0.85); 
-    transform: rotate(-90deg);
+    transform: scale(0.75) rotate(180deg);
     fill: rgba(255, 255, 255, 0.6);   
 }
-@media (max-width: 680px) {
+@media (max-width: 720px) {
     
     article {
         width: 75%; 
