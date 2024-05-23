@@ -163,13 +163,6 @@ audio {
     padding: 25px 0 25px 0;
 }
 
-@media (max-width: 680px) {
-    .video_art {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 .equipo {
     display: flex;
     flex-wrap: wrap;
@@ -223,5 +216,12 @@ footer {
 @media (max-width: 680px) {
     .integrante {
         flex: 1 1 100%;
+    }
+    .video_art {
+        display: flex;
+        flex-direction: column;
+    }
+    video {
+        width: 300px;
     }
 }
