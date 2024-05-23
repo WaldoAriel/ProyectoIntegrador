@@ -99,6 +99,9 @@ ul {
     height: 80px;
     width: 80px;
 }
+p {
+    padding: 15px;
+}
 .art1 {
     display: flex;
     flex-wrap: wrap;
@@ -134,10 +137,12 @@ ul {
 .video_art {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     box-shadow: 3px 3px 6px 2px rgba(140, 140, 140, 0.3);
-    margin: 10px;
-    padding: 10px;
+    margin: 10px auto;
+    padding: 10px auto;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     overflow: hidden;
@@ -151,6 +156,11 @@ ul {
 }
 video {
     width: 350px;
+    padding: 25px 0 25px 0;
+}
+audio {
+    width: 350px;
+    padding: 25px 0 25px 0;
 }
 
 @media (max-width: 680px) {

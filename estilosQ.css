@@ -230,5 +230,6 @@ tr:hover{
         overflow: scroll;
         display: flex;
         align-items: flex-start;
+        align-content: center;
     }
 }
