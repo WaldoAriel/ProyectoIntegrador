@@ -263,8 +263,15 @@
   width: 100%;	
   margin: auto;
   }
+  .form__sectioncuatro {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
   .enviar {
-  background-color: rgb(28, 136, 136    );
+  background-color: rgb(28, 136, 136);
   border-radius: 5px;
   border-bottom: none;
   padding: 12px;
