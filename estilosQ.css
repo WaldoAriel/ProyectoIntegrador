@@ -41,6 +41,14 @@ nav {
 a {
     text-decoration: none;
 }
+.mailto {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.mailto:hover {
+    color: rgb(77, 166, 166);
+}
 .li_link {
     transition: all .4s;
     width: 100%;
@@ -161,10 +169,13 @@ article:hover {
 }
 
 footer {
+    margin-top: auto;
     padding: 15px;
     background-color: rgb(25, 100, 100);
     color: white;
     display: flex;
+    flex-direction: column;
+    gap: 15px;
     justify-content: space-between;
     align-items: center;
 }
